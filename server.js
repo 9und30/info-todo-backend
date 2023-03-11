@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 // Erstellt eine Verbindung zur Datenbank
-const db = new sqlite3.Database('./tmp/todos.db', (err) => {
+const db = new sqlite3.Database('./todos.db', (err) => {
   if (err) {
     console.error(err.message);
   }
